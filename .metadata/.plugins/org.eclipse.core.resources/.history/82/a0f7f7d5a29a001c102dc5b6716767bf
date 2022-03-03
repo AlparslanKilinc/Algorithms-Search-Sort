@@ -1,0 +1,12 @@
+package SortingAlgs;
+
+public class main {
+
+	public static void main(String[] args) {
+		int [] arr = new int[10]; 
+		Sorts sort = new Sort();
+		
+
+	}
+
+}

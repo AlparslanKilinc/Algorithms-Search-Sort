@@ -1,0 +1,20 @@
+package SortingAlgs;
+
+import java.util.Arrays;
+
+public class main {
+
+	public static void main(String[] args) {
+		int [] arr = new int[10]; 
+		arr[0]=10;
+		arr[1]= 5;
+		arr[2]=67;
+		Sorts sort = new Sorts();
+		 
+		sort.bubbleSort(arr); 
+		
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+}
