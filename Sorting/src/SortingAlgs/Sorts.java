@@ -5,6 +5,47 @@ public class Sorts {
 	 public Sorts() {
 		 
 	 }
+	 
+	 /// To Do List: 
+	 
+	 /// Heap Sort (Binary Tree) 
+	
+	 public  int partition(int[] arr, int low, int high) {
+		
+		int pivot=arr[high];
+		int partitionindex= low;
+		
+		
+		for(int i=low; i<high; i++) {
+			
+			if(arr[i]<=pivot)
+			{
+				swap(i,partitionindex,arr);
+				partitionindex++;
+			}
+		}
+		
+		swap(partitionindex,high,arr);
+		return partitionindex;
+	
+	 }
+		
+		
+	
+	 public void quickSort(int[]arr, int low , int high) {
+		
+		 if(low<high) {
+			 int pi=partition(arr,low,high);
+			 quickSort(arr,low,pi-1);
+			 quickSort(arr,pi+1,high);
+		 }
+		 
+	
+	 }
+
+	 
+	 
+	 
 	/// Array Sorts 
 	public void MergeSort(int[]arr) {
 		int n = arr.length;

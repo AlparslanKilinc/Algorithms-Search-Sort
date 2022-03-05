@@ -1,0 +1,18 @@
+package SortingAlgs;
+
+import java.util.Arrays;
+
+public class main {
+
+	public static void main(String[] args) {
+		int [] arr = {2,5,6,12,5,11};
+		
+		Sorts sort = new Sorts();
+		 
+		sort.quickSort(arr,0,arr.length-1); 
+		
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+}
